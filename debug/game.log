@@ -1,0 +1,5 @@
+﻿  tetrisblock.cpp
+C:\Users\Notch JAY-Z\Documents\game\tetrisblock.cpp(3,34): warning C4100: “painter”: 未引用的形参
+  moc_tetris.cpp
+  moc_widget.cpp
+  game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe
