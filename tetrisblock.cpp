@@ -25,3 +25,8 @@ void tetrisblock::move(int x, int y)
 	}
 }
 
+void tetrisblock::rotate()
+{
+	//—≠ª∑±‰–Œ
+}
+
