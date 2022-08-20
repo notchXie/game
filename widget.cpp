@@ -6,10 +6,13 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
+
+
+    ui->Tetris->click();
+
 }
 
 Widget::~Widget()
 {
     delete ui;
 }
-

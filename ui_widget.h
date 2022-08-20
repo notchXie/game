@@ -11,6 +11,7 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -18,12 +19,17 @@ QT_BEGIN_NAMESPACE
 class Ui_Widget
 {
 public:
+    QPushButton *Tetris;
 
     void setupUi(QWidget *Widget)
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
         Widget->resize(800, 600);
+        Tetris = new QPushButton(Widget);
+        Tetris->setObjectName(QString::fromUtf8("Tetris"));
+        Tetris->setGeometry(QRect(100, 410, 201, 61));
+        Tetris->setStyleSheet(QString::fromUtf8("font: 75 16pt \"Agency FB\";"));
 
         retranslateUi(Widget);
 
@@ -33,6 +39,7 @@ public:
     void retranslateUi(QWidget *Widget)
     {
         Widget->setWindowTitle(QCoreApplication::translate("Widget", "Widget", nullptr));
+        Tetris->setText(QCoreApplication::translate("Widget", "\344\277\204\347\275\227\346\226\257\346\226\271\345\235\227", nullptr));
     } // retranslateUi
 
 };

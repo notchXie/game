@@ -1,5 +1,6 @@
 #pragma once
 #include<qpainter.h>
+#include<tetris.h>
 
 class tetrisblock
 {
