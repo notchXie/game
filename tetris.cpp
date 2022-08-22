@@ -9,9 +9,7 @@ tetris::tetris(QWidget *parent) :
     
     int w = tetris::getWidth();
 	int h = tetris::getHeight();
-    setFixedSize(w, h);
-    setPalette(QPalette(Qt::black));
-    setAutoFillBackground(true);
+    
 }
 
 tetris::~tetris()

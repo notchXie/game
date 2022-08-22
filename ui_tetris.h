@@ -23,7 +23,9 @@ public:
     {
         if (tetris->objectName().isEmpty())
             tetris->setObjectName(QString::fromUtf8("tetris"));
-        tetris->resize(439, 614);
+        tetris->resize(1000, 1200);
+        tetris->setMinimumSize(QSize(1000, 1200));
+        tetris->setMaximumSize(QSize(1000, 1200));
 
         retranslateUi(tetris);
 

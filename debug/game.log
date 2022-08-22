@@ -1,3 +1,5 @@
-﻿  Reading Qt configuration (D:/Qt/5.15.1/msvc2019_64/bin/qmake)
-  widget.cpp
+﻿  Uic'ing tetris.ui...
+  tetris.cpp
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(11,6): warning C4189: “h”: 局部变量已初始化但不引用
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(10,9): warning C4189: “w”: 局部变量已初始化但不引用
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe

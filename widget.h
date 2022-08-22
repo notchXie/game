@@ -1,7 +1,8 @@
-#ifndef WIDGET_H
+﻿#ifndef WIDGET_H
 #define WIDGET_H
 
 #include <QWidget>
+#include <tetris.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -14,6 +15,9 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = nullptr);
     ~Widget();
+
+private slots:
+    void on_Tetris_clicked();
 
 private:
     Ui::Widget *ui;

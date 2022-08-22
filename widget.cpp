@@ -1,4 +1,4 @@
-#include "widget.h"
+﻿#include "widget.h"
 #include "ui_widget.h"
 
 Widget::Widget(QWidget *parent)
@@ -6,13 +6,17 @@ Widget::Widget(QWidget *parent)
     , ui(new Ui::Widget)
 {
     ui->setupUi(this);
-
-
-    ui->Tetris->click();
-
+    
 }
 
 Widget::~Widget()
 {
     delete ui;
 }
+
+void Widget::on_Tetris_clicked()
+{
+	tetris* t = new tetris;
+	t->show();
+}
+
