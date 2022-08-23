@@ -2,7 +2,8 @@
 
 void tetrisblock::draw(QPainter& painter)
 {
-	
+	//随机数
+	rand();
 }
 
 void tetrisblock::move(int x, int y)
@@ -29,4 +30,5 @@ void tetrisblock::rotate()
 {
 	//循环变形
 }
+
 

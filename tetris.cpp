@@ -10,6 +10,7 @@ tetris::tetris(QWidget *parent) :
     int w = tetris::getWidth();
 	int h = tetris::getHeight();
     
+	//Ö±½Ó»æÖÆºÚ´°
 }
 
 tetris::~tetris()

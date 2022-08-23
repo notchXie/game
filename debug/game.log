@@ -1,5 +1,6 @@
-﻿  Uic'ing tetris.ui...
-  tetris.cpp
+﻿  tetris.cpp
+  tetrisblock.cpp
+C:\Users\Notch JAY-Z\Documents\game\tetrisblock.cpp(3,34): warning C4100: “painter”: 未引用的形参
 C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(11,6): warning C4189: “h”: 局部变量已初始化但不引用
 C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(10,9): warning C4189: “w”: 局部变量已初始化但不引用
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe
