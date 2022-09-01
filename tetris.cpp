@@ -1,5 +1,6 @@
 #include "tetris.h"
 #include "ui_tetris.h"
+#include <QPainter>
 
 tetris::tetris(QWidget *parent) :
     QWidget(parent),
@@ -10,10 +11,19 @@ tetris::tetris(QWidget *parent) :
     int w = tetris::getWidth();
 	int h = tetris::getHeight();
     
-	//Ö±½Ó»æÖÆºÚ´°
 }
 
 tetris::~tetris()
 {
     delete ui;
 }
+
+void tetris::paintEvent(QPaintEvent* event)
+{
+	QPainter painter(this);
+	painter.setPen(Qt::black);
+	painter.setBrush(Qt::black);
+	painter.drawRect(0, 0, getWidth(), getHeight());
+}
+
+

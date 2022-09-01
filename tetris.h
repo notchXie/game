@@ -3,7 +3,7 @@
 
 #include <QWidget>
 
-#define xMAX 10     //显示窗口的横向格数
+#define xMAX 18     //显示窗口的横向格数
 #define yMAX 30     //显示窗口的竖向格数
 #define WIDTH 30    //单格的宽度
 #define HEIGHT 30   //单格的高度
@@ -38,6 +38,12 @@ public:
     {
         return yMAX * HEIGHT + (yMAX - 1) * INTERVAL;
     }
+
+
+protected:
+    void paintEvent(QPaintEvent* event);
+//    void keyPressEvent(QKeyEvent* event);
+//    void timerEvent(QTimerEvent* event);
 		
 };
 
