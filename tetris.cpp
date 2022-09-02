@@ -24,6 +24,7 @@ void tetris::paintEvent(QPaintEvent* event)
 	painter.setPen(Qt::black);
 	painter.setBrush(Qt::black);
 	painter.drawRect(0, 0, getWidth(), getHeight());
+	
 }
 
 

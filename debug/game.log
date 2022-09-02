@@ -1,5 +1,4 @@
-﻿  Moc'ing tetris.h...
-  main.cpp
+﻿  main.cpp
   tetris.cpp
   tetrisblock.cpp
   widget.cpp
@@ -9,4 +8,5 @@ C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(11,9): warning C4189: “w”: �
 C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(21,38): warning C4100: “event”: 未引用的形参
   moc_tetris.cpp
   moc_widget.cpp
+  LINK : 没有找到 debug\\game.exe 或上一个增量链接没有生成它；正在执行完全链接
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe
