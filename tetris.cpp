@@ -1,6 +1,7 @@
 #include "tetris.h"
 #include "ui_tetris.h"
 #include <QPainter>
+#include "tetrisblock.h"
 
 tetris::tetris(QWidget *parent) :
     QWidget(parent),
@@ -11,6 +12,8 @@ tetris::tetris(QWidget *parent) :
     int w = tetris::getWidth();
 	int h = tetris::getHeight();
     
+	//setFixedSize(w, h);
+	
 }
 
 tetris::~tetris()
@@ -24,6 +27,9 @@ void tetris::paintEvent(QPaintEvent* event)
 	painter.setPen(Qt::black);
 	painter.setBrush(Qt::black);
 	painter.drawRect(0, 0, getWidth(), getHeight());
+	
+	tetrisblock block;
+	block.draw(painter, 1, 1);
 	
 }
 
