@@ -42,8 +42,10 @@ public:
 
 protected:
     void paintEvent(QPaintEvent* event);
+	void timerEvent(QTimerEvent* event, int y);
 //    void keyPressEvent(QKeyEvent* event);
-//    void timerEvent(QTimerEvent* event);
+    int timerId = startTimer(1000);
+
 		
 };
 
