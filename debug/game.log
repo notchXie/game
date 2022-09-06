@@ -1,2 +1,7 @@
-﻿  tetrisblock.cpp
+﻿  tetris.cpp
+C:\Users\Notch JAY-Z\Documents\game\tetrisblock.h(8,1): warning C4005: “INTERVAL”: 宏重定义
+C:\Users\Notch JAY-Z\Documents\game\tetris.h(10): message : 参见“INTERVAL”的前一个定义
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(13,6): warning C4189: “h”: 局部变量已初始化但不引用
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(12,9): warning C4189: “w”: 局部变量已初始化但不引用
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(24,38): warning C4100: “event”: 未引用的形参
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe

@@ -29,8 +29,19 @@ void tetris::paintEvent(QPaintEvent* event)
 	painter.drawRect(0, 0, getWidth(), getHeight());
 	
 	tetrisblock block;
-	block.draw(painter, 1, 1);
+	
+	//随机数确定初始位置
+	int x = qrand() % (xMAX - COUNT);
+	//1秒后方块下落
+	block.draw(painter, x, 0);
+	block.move(x, 0);
+	
 	
 }
 
+//定时器每秒下落一格
+void tetris::timerEvent(QTimerEvent* event)
+{
+
+}
 
