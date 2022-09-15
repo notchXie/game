@@ -9,10 +9,6 @@ tetris::tetris(QWidget *parent) :
     ui(new Ui::tetris)
 {
     ui->setupUi(this);
-    
-    int w = tetris::getWidth();
-	int h = tetris::getHeight();
-	//setFixedSize(w, h);
 	
 }
 
@@ -26,27 +22,31 @@ void tetris::paintEvent(QPaintEvent* event)
 	QPainter painter(this);
 	painter.setPen(Qt::black);
 	painter.setBrush(Qt::black);
-	painter.drawRect(0, 0, getWidth(), getHeight());
+	painter.drawRect(0, 0, getWidth()+18, getHeight()+8);
 	
 	tetrisblock block;
-	
-	//随机数确定初始位置
-	int x = qrand() % (xMAX - COUNT);
-	int y = 0;
-	//1秒后方块下落
+	tetrisblock* pblock = &block;
+
 	block.draw(painter, x, y);
 	block.move(x, 0);
 	
 }
 
 
-void tetris::timerEvent(QTimerEvent* event,int y)
+void tetris::timerEvent(QTimerEvent* event)
 {
 	
 	if (event->timerId() == timerId)
 	{
 		y++;
-		update();
+		if (y < 30)
+		{
+			update();
+		}
+		else
+		{
+			killTimer(timerId);
+		}
 	}
 }
 

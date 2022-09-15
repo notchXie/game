@@ -39,14 +39,18 @@ public:
         return yMAX * HEIGHT + (yMAX - 1) * INTERVAL;
     }
 
+    //随机数确定初始位置
+    int x = qrand() % (xMAX - COUNT);
+    int y = 0;
+	
 
 protected:
     void paintEvent(QPaintEvent* event);
-	void timerEvent(QTimerEvent* event, int y);
 //    void keyPressEvent(QKeyEvent* event);
-    int timerId = startTimer(1000);
+    int timerId = startTimer(500);
 
-		
+private slots:
+    void timerEvent(QTimerEvent* event);
 };
 
 
