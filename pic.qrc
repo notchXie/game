@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/background">
+        <file alias="headBackground1">pixpale/gameHeaad - adapt.png</file>
+        <file alias="headBackground">pixpale/gameHeaad.png</file>
+    </qresource>
+</RCC>

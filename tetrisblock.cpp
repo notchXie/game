@@ -11,7 +11,6 @@ void tetrisblock::draw(QPainter& painter,int x,int y)
 	painter.drawRect((x+1) * (WIDTH + INTERVAL), (y) * (HEIGHT + INTERVAL), WIDTH, HEIGHT);
 	painter.drawRect((x + 2) * (WIDTH + INTERVAL), (y) * (HEIGHT + INTERVAL), WIDTH, HEIGHT);
 	painter.drawRect((x + 2) * (WIDTH + INTERVAL), (y+1) * (HEIGHT + INTERVAL), WIDTH, HEIGHT);
-	
 }
 
 void tetrisblock::move(int x, int y)

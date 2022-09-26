@@ -25,10 +25,13 @@ public:
     {
         if (Widget->objectName().isEmpty())
             Widget->setObjectName(QString::fromUtf8("Widget"));
-        Widget->resize(800, 600);
+        Widget->setEnabled(true);
+        Widget->resize(1600, 900);
+        Widget->setMinimumSize(QSize(1600, 900));
+        Widget->setMaximumSize(QSize(1600, 900));
         Tetris = new QPushButton(Widget);
         Tetris->setObjectName(QString::fromUtf8("Tetris"));
-        Tetris->setGeometry(QRect(100, 410, 201, 61));
+        Tetris->setGeometry(QRect(80, 760, 201, 61));
         Tetris->setStyleSheet(QString::fromUtf8("font: 75 16pt \"Agency FB\";"));
 
         retranslateUi(Widget);

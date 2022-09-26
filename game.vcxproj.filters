@@ -27,6 +27,16 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
     <Filter Include="Source Files">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -43,10 +53,10 @@
     <ClCompile Include="tetris.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="widget.cpp">
+    <ClCompile Include="tetrisblock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tetrisblock.cpp">
+    <ClCompile Include="widget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -54,6 +64,9 @@
     <QtMoc Include="tetris.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <ClInclude Include="tetrisblock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <QtMoc Include="widget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
@@ -65,6 +78,14 @@
     <CustomBuild Include="release\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
+    
+    
+    
+    
+    
+    
+    
+    
   </ItemGroup>
   <ItemGroup>
     <QtUic Include="tetris.ui">
@@ -75,8 +96,11 @@
     </QtUic>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="tetrisblock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
+    <None Include="pixpale\gameHeaad - adapt.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <QtRcc Include="pic.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
   </ItemGroup>
 </Project>

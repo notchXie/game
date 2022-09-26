@@ -8,8 +8,7 @@ tetris::tetris(QWidget *parent) :
     QWidget(parent),
     ui(new Ui::tetris)
 {
-    ui->setupUi(this);
-	
+    ui->setupUi(this);	
 }
 
 tetris::~tetris()
@@ -32,10 +31,8 @@ void tetris::paintEvent(QPaintEvent* event)
 	
 }
 
-
 void tetris::timerEvent(QTimerEvent* event)
 {
-	
 	if (event->timerId() == timerId)
 	{
 		y++;
@@ -49,4 +46,3 @@ void tetris::timerEvent(QTimerEvent* event)
 		}
 	}
 }
-

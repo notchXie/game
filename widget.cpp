@@ -5,6 +5,14 @@ Widget::Widget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Widget)
 {
+    QPixmap backgroud = QPixmap(":/background/headBackground1");
+	QPalette palette;
+	palette.setBrush(QPalette::Background, backgroud);
+	this->setPalette(palette);
+	
+	setAutoFillBackground(1);
+	setWindowOpacity(0.754321);
+
     ui->setupUi(this);
     
 }

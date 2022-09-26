@@ -11,10 +11,12 @@ CONFIG += c++11
 SOURCES += \
     main.cpp \
     tetris.cpp \
+    tetrisblock.cpp\
     widget.cpp
 
 HEADERS += \
     tetris.h \
+    tetrisblock.h\
     widget.h
 
 FORMS += \
@@ -25,3 +27,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    pic.qrc
