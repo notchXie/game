@@ -11,7 +11,7 @@ Widget::Widget(QWidget *parent)
 	this->setPalette(palette);
 	
 	setAutoFillBackground(1);
-	setWindowOpacity(0.754321);
+	setWindowOpacity(0.81234567);
 
     ui->setupUi(this);
     

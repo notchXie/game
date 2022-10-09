@@ -1,2 +1,5 @@
-﻿  widget.cpp
+﻿  Moc'ing mainWindowPushButton.h...
+  mainWindowPushButton.cpp
+  qrc_pic.cpp
+  moc_mainWindowPushButton.cpp
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe
