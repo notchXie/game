@@ -21,3 +21,8 @@ mainWindowPushButton::mainWindowPushButton(QString normal, QString press)
 	this->setIcon(pixmap);
 	this->setIconSize(QSize(pixmap.width(), pixmap.height()));
 }
+
+void mainWindowPushButton::move1(int val)
+{
+	
+}
