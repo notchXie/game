@@ -17,6 +17,7 @@ Widget::Widget(QWidget *parent)
 	mainWindowPushButton* m1 = new mainWindowPushButton(":/background/mainPushButton", ":/background/mainPushButton");
 	m1->setParent(this);
 	m1->move(50, 50);
+	
 	connect(m1, &mainWindowPushButton::pressed, [=]() {m1->move1(-5); });
 	connect(m1, &mainWindowPushButton::released, [=]() {m1->move1(5); });
 	connect(m1, SIGNAL(clicked()), this, SLOT(on_pushButton_clicked()));
