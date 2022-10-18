@@ -16,9 +16,10 @@ Widget::Widget(QWidget *parent)
 
 	mainWindowPushButton* m1 = new mainWindowPushButton(":/background/mainPushButton", ":/background/mainPushButton");
 	m1->setParent(this);
-	m1->move(this->width() * 0.5 - m1->width() * 0.5, this->height() - m1->height() * 1.2);
+	m1->move(50, 50);
 	connect(m1, &mainWindowPushButton::pressed, [=]() {m1->move1(-5); });
 	connect(m1, &mainWindowPushButton::released, [=]() {m1->move1(5); });
+	connect(m1, SIGNAL(clicked()), this, SLOT(on_pushButton_clicked()));
 		
 	m1->show();
 		
@@ -31,7 +32,7 @@ Widget::~Widget()
     delete ui;
 }
 
-void Widget::on_Tetris_clicked()
+void Widget::on_pushButton_clicked()
 {
 	tetris* t = new tetris;
 	t->show();

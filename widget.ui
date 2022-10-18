@@ -28,22 +28,6 @@
   <property name="windowTitle">
    <string>Widget</string>
   </property>
-  <widget class="QPushButton" name="Tetris">
-   <property name="geometry">
-    <rect>
-     <x>80</x>
-     <y>760</y>
-     <width>201</width>
-     <height>61</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">font: 75 16pt &quot;Agency FB&quot;;</string>
-   </property>
-   <property name="text">
-    <string>俄罗斯方块</string>
-   </property>
-  </widget>
  </widget>
  <resources/>
  <connections/>

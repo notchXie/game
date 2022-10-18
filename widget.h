@@ -17,9 +17,10 @@ public:
     ~Widget();
 
 private slots:
-    void on_Tetris_clicked();
+	void on_pushButton_clicked();
 
 private:
     Ui::Widget *ui;
+
 };
 #endif // WIDGET_H
