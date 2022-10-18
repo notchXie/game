@@ -1,3 +1,2 @@
-﻿  mainWindowPushButton.cpp
-C:\Users\Notch JAY-Z\Documents\game\mainWindowPushButton.cpp(25,38): warning C4100: “val”: 未引用的形参
+﻿  widget.cpp
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe
