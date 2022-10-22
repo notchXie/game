@@ -3,6 +3,7 @@
 #include <QPainter>
 #include "tetrisblock.h"
 #include <qtimer.h>
+#include <QDebug>
 
 tetris::tetris(QWidget *parent) :
     QWidget(parent),
@@ -26,8 +27,8 @@ void tetris::paintEvent(QPaintEvent* event)
 	tetrisblock block;
 	tetrisblock* pblock = &block;
 
-	block.draw(painter, x, y);
-	block.move(x, 0);
+	block.move(x, y);
+	block.draw(painter);
 	
 }
 
@@ -44,5 +45,25 @@ void tetris::timerEvent(QTimerEvent* event)
 		{
 			killTimer(timerId);
 		}
+	}
+}
+
+void tetris::keyPressEvent(QKeyEvent* event)
+{
+	if (event->key() == Qt::Key_Left)
+	{
+		x--;
+	}
+	else if (event->key() == Qt::Key_Right)
+	{
+		x++;
+	}
+	else if (event->key() == Qt::Key_Down)
+	{
+		y++;
+	}
+	else if (event->key() == Qt::Key_Up)
+	{
+		//Ðý×ª·½¿é
 	}
 }

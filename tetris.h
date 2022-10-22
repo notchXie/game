@@ -2,6 +2,7 @@
 #define TETRIS_H
 
 #include <QWidget>
+#include <QKeyEvent>
 
 #define xMAX 18     //显示窗口的横向格数
 #define yMAX 30     //显示窗口的竖向格数
@@ -38,15 +39,14 @@ public:
     {
         return yMAX * HEIGHT + (yMAX - 1) * INTERVAL;
     }
+    void keyPressEvent(QKeyEvent* event);
 
-    //随机数确定初始位置
-    int x = qrand() % (xMAX - COUNT);
-    int y = 0;
-	
+	int x = qrand() % (xMAX - COUNT);
+	int y = 0;
+
 
 protected:
     void paintEvent(QPaintEvent* event);
-//    void keyPressEvent(QKeyEvent* event);
     int timerId = startTimer(500);
 
 private slots:

@@ -1,6 +1,6 @@
 #include "tetrisblock.h"
 
-void tetrisblock::draw(QPainter& painter,int x,int y)
+void tetrisblock::draw(QPainter& painter)
 {
 	//随机方块颜色
 	QColor color = QColor(qrand() % 256, qrand() % 256, qrand() % 256);
@@ -15,22 +15,23 @@ void tetrisblock::draw(QPainter& painter,int x,int y)
 
 void tetrisblock::move(int x, int y)
 {
-	if (/*按下d键*/ 1)
-	{
-		x++;
-	}
-	if (/*按下a键*/ 1)
-	{
-		x--;
-	}
-	if (/*按下s键*/ 1)
-	{
-		y--;
-	}
-	if (/*按下w键*/ 1)
-	{
-		tetrisblock::rotate();
-	}
+	this->x = x;
+	this->y = y;
+}
+
+void tetrisblock::movedown()
+{
+	y++;
+}
+
+void tetrisblock::moveleft()
+{
+	x--;
+}
+
+void tetrisblock::moveright()
+{
+	x++;
 }
 
 void tetrisblock::rotate()

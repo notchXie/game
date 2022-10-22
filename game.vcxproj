@@ -240,6 +240,7 @@
     </QtUic>
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram.cd" />
     <None Include="pixpale\gameHeaad - adapt.png" />
     <QtRcc Include="pic.qrc">
     </QtRcc>

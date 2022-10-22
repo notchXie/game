@@ -1,2 +1,14 @@
-﻿  widget.cpp
+﻿  Moc'ing tetris.h...
+  main.cpp
+  tetris.cpp
+  tetrisblock.cpp
+  widget.cpp
+C:\Users\Notch JAY-Z\Documents\game\tetrisblock.h(9,1): warning C4005: “INTERVAL”: 宏重定义 (编译源文件 tetrisblock.cpp)
+C:\Users\Notch JAY-Z\Documents\game\tetris.h(11): message : 参见“INTERVAL”的前一个定义 (编译源文件 tetrisblock.cpp)
+C:\Users\Notch JAY-Z\Documents\game\tetrisblock.h(9,1): warning C4005: “INTERVAL”: 宏重定义 (编译源文件 tetris.cpp)
+C:\Users\Notch JAY-Z\Documents\game\tetris.h(11): message : 参见“INTERVAL”的前一个定义 (编译源文件 tetris.cpp)
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(20,38): warning C4100: “event”: 未引用的形参
+C:\Users\Notch JAY-Z\Documents\game\tetris.cpp(28,15): warning C4189: “pblock”: 局部变量已初始化但不引用
+  moc_tetris.cpp
+  moc_widget.cpp
   game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe

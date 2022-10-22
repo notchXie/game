@@ -1,5 +1,6 @@
 #pragma once
 #include<qpainter.h>
+#include "tetris.h"
 
 #define xMAX 18     //显示窗口的横向格数
 #define yMAX 30     //显示窗口的竖向格数
@@ -14,14 +15,21 @@ class tetrisblock
 	public:
 		//tetrisblock();
 		//~tetrisblock();
+		int x=0;
+		int y=0;
 
-		void draw(QPainter& painter, int x, int y);
+		void draw(QPainter& painter);
 		void move(int x, int y);
+		void movedown();
+		void moveleft();
+		void moveright();
 		void rotate();	
 		void set_color(QColor color);
 		void set_position(int x, int y);
 		void set_type(int type);
 		void set_rotation(int rotation);
+		
+protected:
 
 
 };
