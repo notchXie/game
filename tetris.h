@@ -47,7 +47,7 @@ public:
 
 protected:
     void paintEvent(QPaintEvent* event);
-    int timerId = startTimer(500);
+    int timerId = startTimer(650);
 
 private slots:
     void timerEvent(QTimerEvent* event);

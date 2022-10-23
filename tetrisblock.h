@@ -20,10 +20,6 @@ class tetrisblock
 
 		void draw(QPainter& painter);
 		void move(int x, int y);
-		void movedown();
-		void moveleft();
-		void moveright();
-		void rotate();	
 		void set_color(QColor color);
 		void set_position(int x, int y);
 		void set_type(int type);

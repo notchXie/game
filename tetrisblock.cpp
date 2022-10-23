@@ -19,25 +19,4 @@ void tetrisblock::move(int x, int y)
 	this->y = y;
 }
 
-void tetrisblock::movedown()
-{
-	y++;
-}
-
-void tetrisblock::moveleft()
-{
-	x--;
-}
-
-void tetrisblock::moveright()
-{
-	x++;
-}
-
-void tetrisblock::rotate()
-{
-	//Ðý×ª·½¿é
-	
-}
-
 

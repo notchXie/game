@@ -52,18 +52,28 @@ void tetris::keyPressEvent(QKeyEvent* event)
 {
 	if (event->key() == Qt::Key_Left)
 	{
-		x--;
+		if (y < 30 && x>0 )
+		{
+			x--; 
+			update();
+		}
 	}
 	else if (event->key() == Qt::Key_Right)
 	{
-		x++;
+		if (y < 30 && x < 16)
+		{
+			x++;
+			update();
+		}
+		
 	}
 	else if (event->key() == Qt::Key_Down)
 	{
-		y++;
-	}
-	else if (event->key() == Qt::Key_Up)
-	{
-		//Ðý×ª·½¿é
+		if (y < 29)
+		{
+			y++;
+			update();
+		}
+		
 	}
 }
