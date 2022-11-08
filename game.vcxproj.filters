@@ -50,30 +50,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="tetris.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="tetrisblock.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="widget.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="mainWindowPushButton.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <QtMoc Include="tetris.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <ClInclude Include="tetrisblock.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <QtMoc Include="widget.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
-    <QtMoc Include="mainWindowPushButton.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
@@ -84,11 +66,13 @@
     <CustomBuild Include="release\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
+    
+    
+    
+    
+    
   </ItemGroup>
   <ItemGroup>
-    <QtUic Include="tetris.ui">
-      <Filter>Form Files</Filter>
-    </QtUic>
     <QtUic Include="widget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
@@ -97,9 +81,14 @@
     <None Include="pixpale\gameHeaad - adapt.png">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="pixpale\gameHeaad.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="pixpale\mainPushButton.png">
+      <Filter>Resource Files</Filter>
+    </None>
     <QtRcc Include="pic.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
-    <None Include="ClassDiagram.cd" />
   </ItemGroup>
 </Project>

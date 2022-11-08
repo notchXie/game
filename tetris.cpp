@@ -1,4 +1,4 @@
-#include "tetris.h"
+﻿#include "tetris.h"
 #include "ui_tetris.h"
 #include <QPainter>
 #include "tetrisblock.h"

@@ -10,17 +10,14 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
-    tetris.cpp \
-    tetrisblock.cpp\
-    widget.cpp
+    widget.cpp \
+    mainWindowPushButton.cpp
 
 HEADERS += \
-    tetris.h \
-    tetrisblock.h\
-    widget.h
+    widget.h \
+    mainWindowPushButton.h
 
 FORMS += \
-    tetris.ui \
     widget.ui
 
 # Default rules for deployment.

@@ -2,7 +2,6 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <tetris.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class Widget; }
@@ -17,7 +16,6 @@ public:
     ~Widget();
 
 private slots:
-	void on_pushButton_clicked();
 
 private:
     Ui::Widget *ui;
