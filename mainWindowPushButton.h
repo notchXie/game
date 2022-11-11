@@ -13,4 +13,5 @@ public:
 	QString normalImgPath;
 	QString pressImgPath;
 	void move1(int val);
+	
 };

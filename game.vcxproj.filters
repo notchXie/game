@@ -50,16 +50,30 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="mainWindowPushButton.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tictactoe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
     <ClCompile Include="widget.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="mainWindowPushButton.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="tictactoe.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
     <QtMoc Include="widget.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    
+    
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <Filter>Generated Files</Filter>
     </CustomBuild>
@@ -71,8 +85,14 @@
     
     
     
+    
+    
+    
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="tictactoe.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
     <QtUic Include="widget.ui">
       <Filter>Form Files</Filter>
     </QtUic>
@@ -87,8 +107,14 @@
     <None Include="pixpale\mainPushButton.png">
       <Filter>Resource Files</Filter>
     </None>
+    <None Include="pixpale\mainPushButton2.png">
+      <Filter>Resource Files</Filter>
+    </None>
     <QtRcc Include="pic.qrc">
       <Filter>Resource Files</Filter>
     </QtRcc>
+    <None Include="pixpale\tictactoe.png">
+      <Filter>Resource Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

@@ -10,14 +10,17 @@ CONFIG += c++11
 
 SOURCES += \
     main.cpp \
+    tictactoe.cpp \
     widget.cpp \
     mainWindowPushButton.cpp
 
 HEADERS += \
+    tictactoe.h \
     widget.h \
     mainWindowPushButton.h
 
 FORMS += \
+    tictactoe.ui \
     widget.ui
 
 # Default rules for deployment.

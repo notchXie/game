@@ -1,11 +1,5 @@
-﻿  Generate moc_predefs.h
-  Uic'ing widget.ui...
-  Rcc'ing pic.qrc...
-  Moc'ing widget.h...
+﻿  Moc'ing widget.h...
   main.cpp
   widget.cpp
-  qrc_pic.cpp
   moc_widget.cpp
-widget.obj : error LNK2019: 无法解析的外部符号 "public: __cdecl mainWindowPushButton::mainWindowPushButton(class QString,class QString)" (??0mainWindowPushButton@@QEAA@VQString@@0@Z)，函数 "public: __cdecl Widget::Widget(class QWidget *)" (??0Widget@@QEAA@PEAVQWidget@@@Z) 中引用了该符号
-widget.obj : error LNK2019: 无法解析的外部符号 "public: void __cdecl mainWindowPushButton::move1(int)" (?move1@mainWindowPushButton@@QEAAXH@Z)，函数 "public: __cdecl <lambda_3505ad7d9d31487153ca0d3bb50760a9>::operator()(void)const " (??R<lambda_3505ad7d9d31487153ca0d3bb50760a9>@@QEBA@XZ) 中引用了该符号
-debug\\game.exe : fatal error LNK1120: 2 个无法解析的外部命令
+  game.vcxproj -> C:\Users\Notch JAY-Z\Documents\game\debug\game.exe

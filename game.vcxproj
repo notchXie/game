@@ -129,9 +129,31 @@
   <QtMoc><CompilerFlavor>msvc</CompilerFlavor><Include>C:/Users/Notch JAY-Z/Documents/game/$(Configuration)/moc_predefs.h</Include><ExecutionDescription>Moc'ing %(Identity)...</ExecutionDescription><DynamicSource>output</DynamicSource><QtMocDir>$(Configuration)</QtMocDir><QtMocFileName>moc_%(Filename).cpp</QtMocFileName></QtMoc><QtRcc><InitFuncName>pic</InitFuncName><Compression>default</Compression><ExecutionDescription>Rcc'ing %(Identity)...</ExecutionDescription><QtRccDir>$(Configuration)</QtRccDir><QtRccFileName>qrc_%(Filename).cpp</QtRccFileName></QtRcc><QtUic><ExecutionDescription>Uic'ing %(Identity)...</ExecutionDescription><QtUicDir>$(ProjectDir)</QtUicDir><QtUicFileName>ui_%(Filename).h</QtUicFileName></QtUic></ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainWindowPushButton.cpp" />
+    <ClCompile Include="tictactoe.cpp" />
     <ClCompile Include="widget.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="mainWindowPushButton.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
+    <QtMoc Include="tictactoe.h">
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtMoc>
     <QtMoc Include="widget.h">
       
       
@@ -144,6 +166,8 @@
     </QtMoc>
   </ItemGroup>
   <ItemGroup>
+    
+    
     <CustomBuild Include="debug\moc_predefs.h.cbt">
       <FileType>Document</FileType>
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
@@ -165,8 +189,22 @@
     
     
     
+    
+    
+    
   </ItemGroup>
   <ItemGroup>
+    <QtUic Include="tictactoe.ui">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </QtUic>
     <QtUic Include="widget.ui">
       
       
@@ -183,6 +221,7 @@
     <None Include="pixpale\gameHeaad - adapt.png" />
     <None Include="pixpale\gameHeaad.png" />
     <None Include="pixpale\mainPushButton.png" />
+    <None Include="pixpale\mainPushButton2.png" />
     <QtRcc Include="pic.qrc">
       
       
@@ -194,6 +233,7 @@
       
       
     </QtRcc>
+    <None Include="pixpale\tictactoe.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" /><ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')"><Import Project="$(QtMsBuild)\qt.targets" /></ImportGroup>
   <ImportGroup Label="ExtensionTargets" />
