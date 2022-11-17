@@ -17,6 +17,7 @@ public:
 
 private slots:
 	void tictactoe();
+    void treatMessage();
 
 private:
     Ui::Widget *ui;
